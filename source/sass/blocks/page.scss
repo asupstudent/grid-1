@@ -20,6 +20,88 @@
       auto;
     background-color: $color-default-white;
     border-right: 1px solid $color-default-cornflower;
+
+    &-logo {
+      margin: 24px 30px 15px;
+    }
+
+    &-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &-item {
+      position: relative;
+
+      &-active {
+        background-color: $color-default-smokywhite;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 60px;
+          left: 0;
+          top: 0;
+          background-image: url("../img/active-menu-item.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .page-menu-link {
+          font-weight: 500;
+          color: $color-default-indigo;
+        }
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: block;
+      padding: 20px 25px 20px 63px;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-default-purple;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 30px;
+      }
+
+      &-cab::before {
+        background-image: url("../img/cabinet.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &-class::before {
+        background-image: url("../img/class.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &-book::before {
+        background-image: url("../img/book.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &-home::before {
+        background-image: url("../img/home.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &-exam::before {
+        background-image: url("../img/exam.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
   }
 
   &-header {

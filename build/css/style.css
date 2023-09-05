@@ -732,6 +732,75 @@ button,
   background-color: #ffffff;
   border-right: 1px solid #b4bef0;
 }
+.page-menu-logo {
+  margin: 24px 30px 15px;
+}
+.page-menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.page-menu-item {
+  position: relative;
+}
+.page-menu-item-active {
+  background-color: #f1f3fe;
+}
+.page-menu-item-active::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  background-image: url("../img/active-menu-item.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-menu-item-active .page-menu-link {
+  font-weight: 500;
+  color: #576bcc;
+}
+.page-menu-link {
+  position: relative;
+  display: block;
+  padding: 20px 25px 20px 63px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3c425f;
+}
+.page-menu-link::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+}
+.page-menu-link-cab::before {
+  background-image: url("../img/cabinet.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-menu-link-class::before {
+  background-image: url("../img/class.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-menu-link-book::before {
+  background-image: url("../img/book.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-menu-link-home::before {
+  background-image: url("../img/home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-menu-link-exam::before {
+  background-image: url("../img/exam.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .page-header {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
