@@ -1,0 +1,46 @@
+.profile {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  max-width: 400px;
+
+  &-with-picture::before {
+    content: attr(data-text);
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: $color-default-cornflower;
+    border-radius: 50%;
+    background-color: $color-default-smokywhite;
+  }
+
+  &-name {
+    font-size: 16px;
+    line-height: 40px;
+    color: $color-default-purple;
+  }
+
+  &-btn {
+    position: relative;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 6px solid $color-default-indigo;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+}
