@@ -102,6 +102,32 @@
         background-position: center;
       }
     }
+
+    &-tools {
+      padding: 0;
+      margin: 0 0 10px 0;
+      list-style: none;
+
+      &-link {
+        position: relative;
+        display: block;
+        padding: 20px 25px 20px 63px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-default-purple;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          left: 30px;
+          background-image: url("../img/settings.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
   }
 
   &-header {
@@ -110,6 +136,11 @@
     grid-template-columns: 1fr auto 80px;
     background-color: $color-default-white;
     border-bottom: 1px solid $color-default-cornflower;
+
+    &-search {
+      margin-top: 10px;
+      margin-left: 30px;
+    }
   }
 
   &-main {

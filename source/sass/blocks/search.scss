@@ -1,0 +1,19 @@
+.search {
+  &-field {
+    padding: 20px 20px 20px 32px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-default-purple;
+    border: none;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left center;
+
+    &::placeholder {
+      color: #b4bef0;
+    }
+  }
+}
