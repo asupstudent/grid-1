@@ -1051,6 +1051,57 @@ button,
   -ms-grid-column: 1;
   grid-area: offers;
 }
+.offers-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.offers-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
+          box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
+  border-radius: 4px;
+}
+.offers-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3c425f;
+}
+.offers-item-text {
+  margin: 5px 0 5px 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3c425f;
+}
+.offers-item-time {
+  margin: 0 0 8px 0;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0bc4cf;
+}
+.offers-footer {
+  text-align: right;
+}
+.offers-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #576bcc;
+}
 
 .video {
   -ms-grid-row: 5;

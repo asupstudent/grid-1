@@ -1,3 +1,58 @@
 .offers {
   grid-area: offers;
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  &-item {
+    // Чтобы выронять ссылку
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 20px 30px;
+    background-color: $color-default-white;
+    box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
+    border-radius: 4px;
+  }
+
+  &-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-default-purple;
+  }
+
+  &-item-text {
+    margin: 5px 0 5px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-default-purple;
+  }
+
+  &-item-time {
+    margin: 0 0 8px 0;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0bc4cf;
+  }
+
+  &-footer {
+    text-align: right;
+  }
+
+  &-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-default-indigo;
+  }
 }
