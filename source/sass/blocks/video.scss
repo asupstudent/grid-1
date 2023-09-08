@@ -1,3 +1,30 @@
 .video {
   grid-area: video;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+
+  &-lesson {
+    width: 540px;
+    height: 300px;
+    border-radius: 4px;
+  }
+
+  &-title {
+    margin: 20px 0 13px 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e4e8fc;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &-play-list-wrapper {
+    position: relative;
+    height: 300px;
+    background: $color-default-white;
+    box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
+    border-radius: 4px;
+  }
 }
