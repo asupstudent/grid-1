@@ -1,3 +1,53 @@
 .contacts {
   grid-area: contacts;
+  padding: 20px 0 20px 30px;
+  background-color: $color-default-white;
+  box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
+  border-radius: 4px;
+
+  &-title {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-default-purple;
+  }
+
+  &-list {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+    border-top: 1px solid #e4e8fc;
+  }
+
+  &-item {
+    padding: 16px 10px 0 0;
+  }
+
+  &-link {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 12px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-default-purple;
+
+    &::before {
+      grid-row: 1 / 3;
+    }
+  }
+
+  &-name {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
+  }
+
+  &-lang {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 0;
+  }
 }

@@ -871,6 +871,17 @@ button,
   grid-template-columns: 280px 1fr 280px;
   background-color: #3c425f;
 }
+.page-footer-copyright {
+  margin: 20px 10px 10px 30px;
+}
+.page-footer-logo {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #aaaaaa;
+}
 
 .search-field {
   padding: 20px 20px 20px 32px;
@@ -1140,6 +1151,63 @@ button,
   -ms-grid-row-span: 5;
   -ms-grid-column: 3;
   grid-area: contacts;
+  padding: 20px 0 20px 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
+          box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
+  border-radius: 4px;
+}
+.contacts-title {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3c425f;
+}
+.contacts-list {
+  padding: 5px 0 0 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid #e4e8fc;
+}
+.contacts-item {
+  padding: 16px 10px 0 0;
+}
+.contacts-link {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+  grid-template-columns: 40px auto;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-column-gap: 12px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3c425f;
+}
+.contacts-link::before {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+.contacts-name {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin: 0;
+}
+.contacts-lang {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 0;
 }
 
 .play-list {
@@ -1212,6 +1280,24 @@ button,
   -ms-grid-column: 3;
   grid-area: desc;
   margin: 0;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #aaaaaa;
+}
+.copyright-details {
+  margin: 20px 30px 10px 10px;
+  text-align: right;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #aaaaaa;
+}
+.copyright-link {
+  color: #aaaaaa;
 }
 
 /* @mixin hover-focus {
